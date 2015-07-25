@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JXImageViewController">
+            <connections>
+                <outlet property="backBtn" destination="KXB-WA-6dy" id="YdO-px-gjG"/>
+                <outlet property="imgView" destination="vZj-HU-qrs" id="Y97-oj-Q5O"/>
+                <outlet property="saveBtn" destination="Ckl-hx-hIE" id="MKz-Jn-eiP"/>
+                <outlet property="shareBtn" destination="NgC-O5-rpA" id="LzB-Lh-bMb"/>
+                <outlet property="titleLabel" destination="uf4-kF-D6f" id="niJ-Xc-HFj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vZj-HU-qrs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckl-hx-hIE">
+                    <rect key="frame" x="15" y="538" width="70" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="6g0-kh-4Ar"/>
+                        <constraint firstAttribute="width" constant="70" id="6lh-Mc-EaL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="保存">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveClick:" destination="-1" eventType="touchUpInside" id="DBj-ph-mQS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-QR-o7d">
+                    <rect key="frame" x="90" y="538" width="70" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="siW-iL-y34"/>
+                        <constraint firstAttribute="height" constant="32" id="uFU-Pe-TiD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="分享">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareClick:" destination="-1" eventType="touchUpInside" id="bvc-c7-dIH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgC-O5-rpA">
+                    <rect key="frame" x="515" y="538" width="70" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="2RB-KB-Q1I"/>
+                        <constraint firstAttribute="height" constant="32" id="oI5-Um-tye"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="分享">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveListClick:" destination="-1" eventType="touchUpInside" id="yHF-SP-gie"/>
+                        <action selector="shareClick:" destination="-1" eventType="touchUpInside" id="L1R-9h-ASu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf4-kF-D6f">
+                    <rect key="frame" x="181" y="34" width="238" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="238" id="mac-i5-DM7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="13"/>
+                    <state key="normal" title="如需购买，出示本页内容至店员即可">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXB-WA-6dy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backClick:" destination="-1" eventType="touchUpInside" id="l65-1q-R6r"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vZj-HU-qrs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="18i-aU-aj9"/>
+                <constraint firstAttribute="bottom" secondItem="Ckl-hx-hIE" secondAttribute="bottom" constant="30" id="A6Q-4M-Cdm"/>
+                <constraint firstAttribute="bottom" secondItem="vZj-HU-qrs" secondAttribute="bottom" id="EsS-oX-vYf"/>
+                <constraint firstItem="uf4-kF-D6f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="34" id="HmU-f9-xrf"/>
+                <constraint firstItem="KXB-WA-6dy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JAO-k8-Um2"/>
+                <constraint firstItem="vZj-HU-qrs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KpX-If-LS1"/>
+                <constraint firstAttribute="trailing" secondItem="NgC-O5-rpA" secondAttribute="trailing" constant="15" id="Kuh-ts-H35"/>
+                <constraint firstItem="ufX-QR-o7d" firstAttribute="leading" secondItem="Ckl-hx-hIE" secondAttribute="trailing" constant="5" id="M1y-av-HtI"/>
+                <constraint firstItem="KXB-WA-6dy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NzP-Nc-VRY"/>
+                <constraint firstAttribute="centerX" secondItem="uf4-kF-D6f" secondAttribute="centerX" id="OQU-CF-0Su"/>
+                <constraint firstAttribute="trailing" secondItem="KXB-WA-6dy" secondAttribute="trailing" id="Qg8-M4-9YB"/>
+                <constraint firstAttribute="bottom" secondItem="ufX-QR-o7d" secondAttribute="bottom" constant="30" id="Rs6-UT-2jL"/>
+                <constraint firstAttribute="bottom" secondItem="KXB-WA-6dy" secondAttribute="bottom" constant="64" id="feN-Oe-jyC"/>
+                <constraint firstItem="Ckl-hx-hIE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="gSx-ut-TL6"/>
+                <constraint firstAttribute="bottom" secondItem="NgC-O5-rpA" secondAttribute="bottom" constant="30" id="hDX-ye-8je"/>
+                <constraint firstAttribute="trailing" secondItem="vZj-HU-qrs" secondAttribute="trailing" id="sXP-dr-zeX"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ufX-QR-o7d"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="306" y="231"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RW9-Mh-uCb">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="保存">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+        </button>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="474"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Map View 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="diz-Yv-nro">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="474"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015年 ljx. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="69.5" y="407" width="341" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YXh-5F-nCv">
+                    <rect key="frame" x="190" y="137" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Apx-ZI-cHE"/>
+                        <constraint firstAttribute="height" constant="100" id="aUj-Ui-MX0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试版" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvb-0a-Ww6">
+                    <rect key="frame" x="214" y="257" width="51" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.98823529409999999" green="0.87843137250000003" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="diz-Yv-nro" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8as-V5-7fF"/>
+                <constraint firstAttribute="centerX" secondItem="Vvb-0a-Ww6" secondAttribute="centerX" id="BKt-7D-a9I"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="Dub-dg-Qh9"/>
+                <constraint firstAttribute="trailing" secondItem="diz-Yv-nro" secondAttribute="trailing" id="Way-WC-YM9"/>
+                <constraint firstItem="diz-Yv-nro" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xzx-sV-IIv"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="46.5" id="Zmv-Cs-YDV"/>
+                <constraint firstAttribute="centerY" secondItem="Vvb-0a-Ww6" secondAttribute="centerY" constant="-30" id="pye-j6-PvP"/>
+                <constraint firstAttribute="bottom" secondItem="diz-Yv-nro" secondAttribute="bottom" id="u5f-32-sbl"/>
+                <constraint firstAttribute="centerX" secondItem="YXh-5F-nCv" secondAttribute="centerX" id="xFu-LX-gd9"/>
+                <constraint firstAttribute="centerY" secondItem="YXh-5F-nCv" secondAttribute="centerY" constant="50" id="xme-CW-s2A"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="294" y="426"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Map View 2.png" width="375" height="667"/>
+        <image name="logo.png" width="710" height="710"/>
+    </resources>
+</document>
